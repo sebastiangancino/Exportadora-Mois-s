@@ -1,0 +1,205 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+
+:root {
+    --primario: #5a0000;
+    --secundario: #003b16;
+    --tercero: #ffc864;
+}
+
+
+
+
+/*Navbar'''''''''''''''''''''''''''''''''''''''''''''*/
+.nav {
+    position: fixed;
+    background: #5a0000;
+    z-index: 2;
+    border-bottom: solid 2px var(--tercero);
+}
+
+.navbar {
+    display: grid;
+
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.logo img {
+    width: 250px;
+}
+
+ul.lista {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    list-style: none;
+}
+
+.lista a {
+    font-size: 17px;
+    color: var(--tercero);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+ul.lista {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+
+.boton a {
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--tercero);
+    font-weight: 400;
+    background: var(--secundario);
+    width: 8rem;
+    text-align: center;
+}
+
+
+/*-------------------Banner---------------------------*/
+
+
+
+
+#myVideo {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: absolute;
+    bottom: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(241, 241, 241);
+    width: 100%;
+    display: flex;
+    height: 40vh;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.content h1 {
+    color: var(--tercero);
+    font-size: 7rem;
+}
+
+
+/*------------------------Quienes somos----------------------------*/
+
+.nosotros-section{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;   
+}
+
+.nosotros-section {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nosotros-section h1 {
+    color: var(--primario);
+    padding: 2rem;
+}
+
+.nosotros-section p {
+    width: 80%;
+    line-height: 1.6rem;
+    color: gray;
+}
+
+.nosotros-section img{
+    width: 80%;
+    height: 70vh;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 3rem;
+    overflow: hidden;
+}
+
+
+/*-------------------Mision - Vision------------------*/
+
+.vision  .container-m {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: rgb(90, 0, 0);
+    line-height: 1.5rem;
+}
+
+.container-m .left {
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.vision .container-m h2 {
+    color: var(--tercero);
+    padding: 1rem 0;
+}
+
+.vision .rigth img {
+    width: 100%;
+}
+
+.vision  .left p {
+    color: white;
+}
+
+ .vision .rigth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-v {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 1.4rem;
+}
+
+.container-v .rigth {
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-v img {
+    width: 100%;
+}
+
+.container-v h2 {
+    color: var(--primario);
+    padding: 1rem 0;
+}
