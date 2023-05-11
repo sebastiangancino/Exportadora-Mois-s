@@ -16,6 +16,8 @@
 .nav {
     position: fixed;
     background: #5a0000;
+    border-bottom: solid 2px var(--tercero);
+
 }
 
 .navbar {
