@@ -17,7 +17,7 @@
     position: fixed;
     background: #5a0000;
     border-bottom: solid 2px var(--tercero);
-
+    width: 100%;
 }
 
 .navbar {
@@ -27,8 +27,9 @@
 }
 
 .logo img {
-    width: 250px;
-}
+    width: 115px;
+    margin-left: 1rem;
+  }
 
 ul.lista {
     display: flex;
@@ -60,17 +61,16 @@ ul.lista {
 
 }
 
-
 .boton a {
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 1rem;
-    color: var(--tercero);
-    font-weight: 400;
-    background: var(--secundario);
-    width: 8rem;
-    text-align: center;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	padding: 1rem;
+	color: var(--primario);
+	font-weight: 400;
+	background: var(--tercero);
+	width: 8rem;
+	text-align: center;
 }
 
 
@@ -146,10 +146,11 @@ ul.lista {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
 .left-product img {
-    width: 700px;
+    width: 600px;
     border-radius: 16px;
 }
 
@@ -178,7 +179,7 @@ ul.lista {
 }
 
 p.description {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: gray;
 }
 
@@ -189,8 +190,9 @@ p.description {
     background: var(--primario);
     justify-content: center;
     border-radius: 50px;
-}
-
+    margin-top: 2rem;
+    width: 500px;
+  }
 .boton1.boton-productos a {
     color: white;
     text-decoration: none;
@@ -215,9 +217,10 @@ p.description {
 }
 
 .cards {
-    display: flex;
-    padding: 3rem;
-    gap: 5rem;
+  display: flex;
+  padding: 1.2rem;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .card img {
@@ -235,8 +238,8 @@ p.description {
     display: flex;
     flex-direction: column;
     color: white;
-    width: 100%;
-}
+    width: 300px;
+  }
 
 
 
@@ -417,4 +420,8 @@ footer .logo {
 .fa-instagram {
     background: #ffc864;
     color: white;
+}
+
+.container-footer .logo img {
+  width: 200px;
 }
