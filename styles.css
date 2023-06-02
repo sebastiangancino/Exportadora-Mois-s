@@ -78,7 +78,7 @@ ul.lista {
 /*BANNER'''''''''''''''''''''''''''''''''''''''''''''''*/
 
 .banner {
-    background-image: url("./assets/Banner2.png");
+    background-image: url("./assets/cacao-banner.jpg");
     height: 100vh;
 }
 
@@ -154,6 +154,8 @@ ul.lista {
     border-radius: 16px;
 }
 
+
+
 .element {
     display: flex;
     justify-content: center;
@@ -168,6 +170,8 @@ ul.lista {
     flex-direction: column;
     padding: .4rem;
 }
+
+
 
 .title-description-product h3 {
     color: var(--primario);
@@ -425,3 +429,71 @@ footer .logo {
 .container-footer .logo img {
   width: 200px;
 }
+
+
+/*---------------------------Querys---------*/
+
+@media (max-width: 500px) {
+    .nav {
+      display: none;
+    }
+
+    .text-r h2 {
+        font-size: 2rem;
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .producto-container {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-consultas h2{
+        font-size: 1rem;
+    }
+
+    .container-footer{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+
+    .card{
+        width: 250px;
+        padding: 1rem
+    }
+    .card img {
+     width: 250px;
+    }
+
+    .producto-container .title{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .element {
+        flex-direction: column;
+        text-align: center;
+    }
+
+   
+
+    .title-description-product p{
+        text-align: start;
+    }
+
+    .left-product img {
+        width: 300px;
+    }
+
+    .boton1.boton-productos {
+        width: 15rem;
+    }
+  }

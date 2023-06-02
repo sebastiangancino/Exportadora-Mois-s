@@ -20,6 +20,7 @@
     background: #5a0000;
     border-bottom: solid 2px var(--tercero);
     width: 100%;
+    z-index: 2;
 }
 
 .navbar {
@@ -352,3 +353,67 @@ footer .logo {
     background: #ffc864;
     color: white;
 }
+
+
+
+
+
+
+
+/*---------------------------Querys*/
+
+@media (max-width: 450px) {
+    
+    .nav {
+        display: none;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .nosotros-section {
+     padding: .8rem;
+    }
+
+    .nosotros-section img {
+        width: 80%;
+        height: 30vh;
+        border-radius: 10px;
+    }
+
+    .vision .container-m {
+        grid-template-columns: 1fr;
+    }
+
+    .container-m .left {
+        padding: 2rem;
+    }
+
+    .container-v {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-v .rigth {
+    padding: 2rem;
+    }
+
+    .containers-cards {
+      flex-direction: column;
+    }
+
+    .container-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        padding: 2rem;
+        margin: 2rem 0;
+        width: 240px;
+    height: 450px;    
+    }
+    }
+
+
+    
