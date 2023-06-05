@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="contactos.css">
     <title>Document</title>
 </head>
-<nav class="nav">
+<!-- <nav class="nav">
     <div class="navbar">
         <div class="logo">
             <img src="./assets/logo-fondo-blanco.png" alt="">
@@ -26,22 +26,63 @@
         </div>
     </div>
 </nav>
+ -->
 
+<nav class="navbar">
+    <div class="log">
+        <a href="index.html" class="navbar-brand">
+            <img src="./assets/logo-fondo-blanco.png" alt="">
+        </a>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+    </ul>
+    <span class="navbar-toggle" id="js-navbar-toggle">&#9776;</span>
+    <div class="boton">
+        <a href="">Contactos</a>
+    </div>
+</nav>
 
 <body>
 
-    <div class=“container”>
-        <div class=“column1”> <img src=“foto.jpg” alt=“Foto” width=“300” height=“300”> </div>
-        <div class=“column2”>
-            <h1>Título</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lorem eu lorem consequat ultricies.
-                Morbi vitae leo quis nisi consequat tincidunt. Fusce id nisl ac eros lacinia aliquet. Cras quis lacus
-                sit amet leo sagittis tincidunt. Mauris auctor nisl ut augue sagittis, quis luctus nisi blandit.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vitae
-                felis vitae augue fringilla pharetra. Donec in nunc sit amet massa ullamcorper aliquet. Phasellus vel
-                arcu quis massa condimentum malesuada. Curabitur id sapien sed lorem sollicitudin lacinia. Quisque id
-                magna vitae leo ultricies ornare.</p>
+
+    <div class="banner">
+        <div class="contactos-container">
+            <div class="left">
+                <h1>Este es el título de la sección</h1>
+                <p>Esta es la primera línea de texto</p>
+                <p>Esta es la segunda línea de texto</p>
+                <p>Esta es la tercera línea de texto</p>
+            </div>
+            <div class="rigth">
+                <img src="./assets/OIG.jpeg" alt="Imagen de ejemplo" />
+            </div>
         </div>
+    </div>
+
+    <div class="formulario">
+
+        <form>
+            <h1>CONTÁCTANOS</h1>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="tema">Tema</label>
+            <input type="text" id="tema" name="tema" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button class="button" type="submit">Enviar</button>
+        </form>
+
     </div>
     <footer>
         <div class="container-footer">
@@ -84,5 +125,6 @@
         </div>
     </footer>
 </body>
+<script src="main.js"></script>
 
 </html>

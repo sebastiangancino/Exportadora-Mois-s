@@ -208,3 +208,14 @@ footer .logo {
 .container-footer .logo img {
   width: 200px;
 }
+
+
+
+  /*-----------------------Querys -------------------------*/
+
+  @media (max-width: 450px) {
+    .container-footer {
+        grid-template-columns: 1fr;  
+        text-align: center; 
+      }  
+     }
