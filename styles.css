@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 :root {
@@ -23,6 +25,7 @@
     border-bottom: solid 1px var(--tercero);
     position: fixed;
     width: 100%;
+   font-weight: 500;
 }
 
 .navbar-brand {
@@ -77,7 +80,7 @@
     text-align: center;
 }
 
-.log img {
+.logo img {
     width: 100px;
     position: relative;
     z-index: 3;
@@ -124,21 +127,31 @@
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(90,0,0);
+    background: linear-gradient(180deg, rgba(90,0,0,1) 22%, rgba(0,0,0,0.8155637254901961) 73%);
+
 }
 
 .text-r {
     display: flex;
     height: 100vh;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-l {
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .text-r h2 {
     color: var(--primario);
     font-size: 3rem;
-    width: 41%;
+    width: 80%;
     padding: 2rem;
     background: #ffc864;
     border-radius: 16px;
@@ -153,12 +166,11 @@
     align-items: center;
     overflow: hidden;
 }
-
 .producto-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-bottom: solid 1px #f5f5f5;
 }
-
 
 
 
@@ -226,6 +238,7 @@
 p.description {
     font-size: 1.05rem;
     color: gray;
+    font-weight: 500;
 }
 
 
@@ -247,7 +260,6 @@ p.description {
 
 /*Proceso'''''''''''''''''''''''''''''''''''''''''''''''*/
 .proceso {
-    background-color: #f6f6f6;
     padding: 3rem;
 }
 
@@ -257,8 +269,8 @@ p.description {
 }
 
 .title-proceso h1 {
-    color: #003b16;
-    margin-top: 3rem;
+    color: var(--primario);
+    margin: 3rem;
 }
 
 .cards {
@@ -297,12 +309,13 @@ p.description {
 }
 
 .boton-proceso a {
-    background: #003b16;
+    background: var(--primario);
     padding: 1.4rem;
     font-size: 16px;
     text-decoration: none;
     border-radius: 16px;
     color: white;
+    margin-top: 2rem;
 }
 
 
@@ -313,11 +326,6 @@ p.description {
     justify-content: center;
 }
 
-.card img {
-    width: 325px;
-    border-radius: 16px;
-    object-fit: cover;
-}
 
 .card h1 {
     padding: 1rem;
@@ -479,15 +487,33 @@ footer .logo {
       display: none;
     }
 
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .container img{
+        width: 300px;
+        margin-top: 5rem;
+    }
     .text-r h2 {
         font-size: 2rem;
         width: 80%;
         padding: 1rem;
     }
+    .text-r{
+        align-items: baseline;
+         justify-content: center;
+         height: 50vh;
+    }
+
+    .text-l{
+        height: 50vh;
+        justify-content: center;
+    }
 
     .producto-container {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;    
     }
 
     .cards{
@@ -506,13 +532,7 @@ footer .logo {
     }
 
 
-    .card{
-        width: 250px;
-        padding: 1rem
-    }
-    .card img {
-     width: 250px;
-    }
+   
 
     .producto-container .title{
         flex-direction: column;

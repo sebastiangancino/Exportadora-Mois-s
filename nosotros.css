@@ -1,88 +1,10 @@
-/* * {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-family: system-ui;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap');
 
-:root {
-    --primario: #5a0000;
-    --secundario: #003b16;
-    --tercero: #ffc864;
-}
-
- */
-
-
-/*Navbar'''''''''''''''''''''''''''''''''''''''''''''*/
-/* .nav {
-    position: fixed;
-    background: #5a0000;
-    border-bottom: solid 2px var(--tercero);
-    width: 100%;
-    z-index: 2;
-}
-
-.navbar {
-    display: grid;
-
-    grid-template-columns: 1fr 5fr 1fr;
-}
-
-.logo img {
-    width: 115px;
-    margin-left: 1rem;
-  }
-
-ul.lista {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    list-style: none;
-}
-
-.lista a {
-    font-size: 17px;
-    color: var(--tercero);
-    text-decoration: none;
-    padding: 1rem;
-}
-
-ul.lista {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    list-style: none;
-    justify-content: center;
-}
-
-.boton {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    justify-content: end;
-
-}
-
-.boton a {
-	border-radius: 50px;
-	text-decoration: none;
-	font-size: 1.2rem;
-	padding: 1rem;
-	color: var(--primario);
-	font-weight: 400;
-	background: var(--tercero);
-	width: 8rem;
-	text-align: center;
-}
- */
-
-
-
- * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 :root {
@@ -90,6 +12,7 @@ ul.lista {
     --secundario: #003b16;
     --tercero: #ffc864;
 }
+
 
 /*-------------------Navbar--------*/
 
@@ -277,8 +200,10 @@ ul.lista {
 /*-------------------Mision - Vision------------------*/
 .mision-vision .title{
     text-align: center;
-    color: var(--primario);
+    color: var(--tercero);
     padding: 0 2rem 2rem 2rem;
+    background: var(--primario);
+    padding-top: 2rem;
 }
 .vision  .container-m {
     display: grid;
@@ -349,7 +274,7 @@ ul.lista {
     gap: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     text-align: center;
 }
 
@@ -361,8 +286,8 @@ ul.lista {
     display: flex;
     color: white;
     margin: 2rem;
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: auto;
     flex-direction: column;
     justify-content: center;
 }
@@ -496,7 +421,7 @@ footer .logo {
     } */
 
     .content h1 {
-        font-size: 4rem;
+        font-size: 3.4rem;
     }
 
     .nosotros-section {
@@ -528,6 +453,9 @@ footer .logo {
 
     .containers-cards {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
     }
 
     .container-footer {
@@ -537,8 +465,8 @@ footer .logo {
     .card{
         padding: 2rem;
         margin: 2rem 0;
-        width: 240px;
-    height: 450px;    
+        width: 90%;
+    height: auto;    
     }
     }
 
