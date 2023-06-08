@@ -26,6 +26,7 @@
     position: fixed;
     width: 100%;
    font-weight: 500;
+   z-index: 1;
 }
 
 .navbar-brand {
@@ -50,7 +51,7 @@
 }
 
 .navbar-menu a:hover {
-    color: #FFD700;
+    color: var(--tercero);
 }
 
 .navbar-toggle {
@@ -78,6 +79,12 @@
     background: var(--tercero);
     width: 8rem;
     text-align: center;
+}
+
+.boton a:hover {
+    background: none;
+    border: solid 3px var(--tercero);
+    color: var(--tercero);
 }
 
 .logo img {
@@ -168,7 +175,7 @@
 }
 .producto-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     border-bottom: solid 1px #f5f5f5;
 }
 
@@ -184,15 +191,17 @@
 
 .title {
     display: flex;
-    padding: 1rem;
+    padding: 1.5rem 0;
     width: 100%;
+    gap: 1rem;
 
 }
 
 .title h1 {
     color: var(--primario);
-    padding: 5px;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    gap: 1rem;
 }
 
 .left-product {
@@ -203,10 +212,13 @@
 }
 
 .left-product img {
-    width: 600px;
+    width:500px;
     border-radius: 16px;
 }
 
+.container-description {
+    margin: 1rem;
+}
 
 
 .element {
@@ -228,6 +240,7 @@
 
 .title-description-product h3 {
     color: var(--primario);
+    text-transform: uppercase;
 }
 
 .title-description-product p {
@@ -236,13 +249,33 @@
 }
 
 p.description {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: gray;
     font-weight: 500;
 }
 
+.imagen {
+    height: 60%;
+}
 
-.boton1.boton-productos {
+
+.boton1.boton-productos a {
+    padding: 1.5rem 2rem;
+    background: var(--primario);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 17px;
+}
+
+.boton1.boton-productos a:hover{
+    background: white;
+    border: solid 3px var(--primario);
+    color: var(--primario);
+}
+
+
+/* .boton1.boton-productos {
     display: flex;
     padding: 1.5rem;
     background: var(--primario);
@@ -250,12 +283,20 @@ p.description {
     border-radius: 50px;
     margin-top: 2rem;
     width: 500px;
+    cursor: pointer;
+  }
+  .boton1.boton-productos:hover{
+    background: none;
+    border: solid 3px var(--primario);
   }
 .boton1.boton-productos a {
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
 }
+.boton1 boton-productos a:hover{
+    color: var(--primario)!important;
+} */
 
 
 /*Proceso'''''''''''''''''''''''''''''''''''''''''''''''*/
@@ -270,7 +311,9 @@ p.description {
 
 .title-proceso h1 {
     color: var(--primario);
-    margin: 3rem;
+    margin: 1rem 3rem 3rem 3rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 .cards {
@@ -284,13 +327,14 @@ p.description {
     width: 250px;
     border-radius: 16px;
     object-fit: cover;
+
 }
 
 .card {
     background: #5a0000;
     padding: 2rem;
     border-radius: 1rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -308,14 +352,22 @@ p.description {
     text-align: center;
 }
 
+
+
 .boton-proceso a {
     background: var(--primario);
-    padding: 1.4rem;
-    font-size: 16px;
+    padding: 1.5rem;
+    font-size: 17px;
     text-decoration: none;
-    border-radius: 16px;
+    border-radius: 50px;
     color: white;
     margin-top: 2rem;
+}
+
+.boton-proceso a:hover {
+    background: white;
+    color: var(--primario);
+    border: solid 3px var(--primario);
 }
 
 
@@ -367,6 +419,11 @@ p.description {
     text-decoration: none;
     border-radius: 40px;
     color: var(--primario);
+} 
+.boton-consultas a:hover {
+    border: solid 3px var(--tercero);
+    background: none;
+    color: var(--tercero);
 }
 
 .boton-consultas {
@@ -513,7 +570,8 @@ footer .logo {
 
     .producto-container {
         display: grid;
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;  
+        margin-bottom: 3rem;  
     }
 
     .cards{
@@ -531,7 +589,11 @@ footer .logo {
         gap: 2rem;
     }
 
-
+    footer .logo {
+        justify-content: center;
+        z-index: 0;
+        position: relative;
+    }
    
 
     .producto-container .title{
@@ -551,10 +613,8 @@ footer .logo {
     }
 
     .left-product img {
-        width: 300px;
+        display: none;
     }
 
-    .boton1.boton-productos {
-        width: 15rem;
-    }
+
   }
