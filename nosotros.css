@@ -13,7 +13,6 @@
     --tercero: #ffc864;
 }
 
-
 /*-------------------Navbar--------*/
 
 .navbar {
@@ -26,7 +25,8 @@
     border-bottom: solid 1px var(--tercero);
     position: fixed;
     width: 100%;
-    z-index: 2;
+   font-weight: 500;
+   z-index: 1;
 }
 
 .navbar-brand {
@@ -51,7 +51,7 @@
 }
 
 .navbar-menu a:hover {
-    color: #FFD700;
+    color: var(--tercero);
 }
 
 .navbar-toggle {
@@ -81,7 +81,13 @@
     text-align: center;
 }
 
-.log img {
+.boton a:hover {
+    background: none;
+    border: solid 3px var(--tercero);
+    color: var(--tercero);
+}
+
+.logo img {
     width: 100px;
     position: relative;
     z-index: 3;
@@ -117,13 +123,8 @@
     .boton {
         display: none
     }
+
 }
-
-
-
-
-
-
  
 /*-------------------Banner---------------------------*/
 
@@ -224,12 +225,19 @@
 }
 
 .vision .rigth img {
-    width: 100%;
+    width: 80%;
 }
 
 .vision  .left p {
     color: white;
 }
+
+     .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
  .vision .rigth {
     display: flex;
@@ -253,7 +261,7 @@
 }
 
 .container-v img {
-    width: 100%;
+    width: 80%;
 }
 
 .container-v h2 {
@@ -342,6 +350,15 @@
     color: #f6f6f6;
 }
 
+.bloque {
+    display: flex;
+    flex-direction: row;
+    padding: .6rem;
+}
+.bloque img {
+    object-fit: contain;
+    padding-right: 1rem;
+}
 
 .social-links {
     display: flex;
@@ -359,6 +376,7 @@ footer .logo {
     display: flex;
     align-items: center;
     padding-left: 1rem;
+    justify-content: center;
 }
 
 
@@ -407,7 +425,9 @@ footer .logo {
 
 .container-footer .logo img {
   width: 200px;
+  z-index: 0;
 }
+
 
 
 
@@ -460,6 +480,7 @@ footer .logo {
 
     .container-footer {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .card{

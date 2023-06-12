@@ -275,28 +275,7 @@ p.description {
 }
 
 
-/* .boton1.boton-productos {
-    display: flex;
-    padding: 1.5rem;
-    background: var(--primario);
-    justify-content: center;
-    border-radius: 50px;
-    margin-top: 2rem;
-    width: 500px;
-    cursor: pointer;
-  }
-  .boton1.boton-productos:hover{
-    background: none;
-    border: solid 3px var(--primario);
-  }
-.boton1.boton-productos a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-}
-.boton1 boton-productos a:hover{
-    color: var(--primario)!important;
-} */
+
 
 
 /*Proceso'''''''''''''''''''''''''''''''''''''''''''''''*/
@@ -469,6 +448,15 @@ p.description {
     color: #f6f6f6;
 }
 
+.bloque {
+    display: flex;
+    flex-direction: row;
+    padding: .6rem;
+}
+.bloque img {
+    object-fit: contain;
+    padding-right: 1rem;
+}
 
 .social-links {
     display: flex;

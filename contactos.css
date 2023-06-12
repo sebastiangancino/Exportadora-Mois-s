@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
 :root {
@@ -11,6 +12,7 @@
     --secundario: #003b16;
     --tercero: #ffc864;
 }
+
 
 /*-------------------Navbar--------*/
 
@@ -290,6 +292,7 @@ form {
 label {
     display: block;
     margin-top: 10px;
+    color: var(--primario);
 }
 
 input,
@@ -297,6 +300,7 @@ textarea {
     width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 button {
@@ -307,6 +311,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 form h1 {
@@ -316,6 +321,12 @@ form h1 {
 }
 
 
+.formu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
 /*---------------------------Querys*/
 
 @media (max-width: 450px) {
@@ -333,15 +344,28 @@ form h1 {
         width: 300px;
     }
 
+    .img1 img {
+        width: 90%;
+    }
+
     .left {
-        align-items: center;
+        align-items: start;
     }
 
     .left h1 {
         text-align: center;
     }
 
-
+    .formu-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    .img1 {
+        display: flex;
+        justify-content: center;
+    }
 
     .container-footer {
         grid-template-columns: 1fr;
@@ -349,7 +373,7 @@ form h1 {
     }
 
     form {
-        padding: 2rem;
-        width: 80%;
+        padding: 0;
+        width: 100%;
     }
 }
